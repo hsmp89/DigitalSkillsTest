@@ -49,4 +49,6 @@ note: As unable to upload the target folder due to large size, so alternatively 
 
 * A sample video of execution is enclosed under below shared link 
 https://drive.google.com/file/d/199OqhSc0QRzjzyGt6VQcPTZIQHpF6STR/view?usp=sharing
+
 * Screenshots of a serenity,cucumber output reports[as pdf] are placed under the evidence folder
+https://github.com/hsmp89/Identity01/blob/master/evidence/test_report_evidence_1_0.pdf
