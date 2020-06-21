@@ -33,7 +33,7 @@ pass browser value as an argument in commandline as example below
 
 `gradle clean test -Dbrowser=FIREFOX`
 
-note:As I used WebDriverManager which eliminates the problem of locally storing the driver binary files 
+note: I used WebDriverManager which eliminates the problem of locally storing the driver binary files 
 and maintaining different versions of the driver files (for different browsers).
 
 ### Reports location
