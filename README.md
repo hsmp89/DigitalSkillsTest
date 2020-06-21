@@ -8,7 +8,6 @@
 * Java 8
 * opencsv
 * gradle
-
 * IDE- IntelliJ
 
 
@@ -17,12 +16,11 @@
 
 * Input text file contains the vehicle registration numbers with other text content
 * Output text file contains vehicle details and these details are passed through cucumber scenario outline.
-
 * Input text file is parsed and extracted vehicle registration numbers
-* looped through each registration number
+* Iterated through each registration number
 * Verified vehicle details on cartaxcheck.co.uk website
 * Actual values are verified with the expected values which are present in the car_output.txt
-* Solution is designed in such a way that in future multiple input and output files can be given in the scenario outline and * * the logic works without any change
+* Solution is designed in such a way that in future multiple input and output files can be placed in the scenario outline
 
 
 ### Command to execute the automation from command line
