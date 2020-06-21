@@ -42,10 +42,10 @@ and maintaining different versions of the driver files (for different browsers).
 * Serenity Reports are located under target/site/serenity/index.html
 * In adition, Cucumber Reports are located under target/features/cucumber-pretty/index.html
 
+note: As unable to upload the target folder due to large size, so alternatively uploaded compressed target.zip
 
 
-
-## Evidence of tests report
+### Evidence of tests report
 
 * A sample video of execution is enclosed under below shared link 
 https://drive.google.com/file/d/199OqhSc0QRzjzyGt6VQcPTZIQHpF6STR/view?usp=sharing
