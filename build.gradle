@@ -1,0 +1,43 @@
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.73")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
+
+
+dependencies {
+    compile "net.serenity-bdd:serenity-core:2.0.73", "net.serenity-bdd:serenity-junit:2.0.73",
+            "net.serenity-bdd:serenity-cucumber4:1.0.21",
+            'io.cucumber:datatable:3.0.0',
+            'io.github.bonigarcia:webdrivermanager:3.7.1',
+            'org.apache.commons:commons-lang3:3.9',
+            "io.cucumber:cucumber-core:4.2.0",
+            "io.cucumber:cucumber-java:4.2.0",
+            "io.cucumber:cucumber-junit:4.2.0",
+            "junit:junit:4.12",
+            "com.opencsv:opencsv:5.2",
+            "org.assertj:assertj-core:3.8.0"
+}
+gradle.startParameter.continueOnFailure = true
+
+test {
+    testLogging.showStandardStreams = true
+    systemProperties System.getProperties()
+    systemProperty "cucumber.options", System.getProperty("cucumber.options")
+}
+test.finalizedBy(aggregate)
+
